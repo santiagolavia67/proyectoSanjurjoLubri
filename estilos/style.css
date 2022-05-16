@@ -139,7 +139,7 @@ footer img:hover{
 
 .galeria4 img:hover{
     transform: scale(2);
-    transition: all 2s;
+    transition: all 3s;
 }
 
 @media (min-width: 800px){
