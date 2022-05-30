@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import "generales";
+@import "indexyservicios";
+@import "productos";
+@import "contacto";
+@import "nuevosproductos";
+
+@media (min-width: 800px){
+    
+    .galeria img{
+        width: 90%;
+    }
+
+    .galeria iframe{
+        width: 90%;
+    }
+
+    .galeria2 img{
+        width: 50%;
+    }
+
+    .galeria3 img{
+        width: 30%;
+    }
+
+    .galeria4{
+        width: 70%;
+    }
+    .tamaño{
+        margin: 0 200px;
+    }
+    .logo{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1300px){
+    .tamaño{
+        margin: 0 400px;
+    }
+
+    p{
+        font-size: 25px;
+        font-family: 'Anton', sans-serif;
+    }
+}

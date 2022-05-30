@@ -1,0 +1,40 @@
+*{ 
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(167, 154, 154);
+    color: black;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.header{
+    background-color: rgb(37, 37, 173);
+    ul{
+        gap: 10px;
+    }
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer{
+    background-color: rgb(37, 37, 173);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    img:hover{
+        transform: translate(100px);
+        transition: all 3s;
+    }
+}

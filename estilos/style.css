@@ -1,172 +1,197 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
-*{ 
-    padding: 0;
-    margin: 0;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    background-color: rgb(167, 154, 154);
-    color: black;
-    font-family: 'Roboto Flex', sans-serif;
+body {
+  background-color: #a79a9a;
+  color: black;
+  font-family: 'Roboto Flex', sans-serif;
 }
 
-.header{
-    background-color: rgb(37, 37, 173);
+.header {
+  background-color: #2525ad;
 }
 
-
-header nav ul{
-    gap: 10px;
+.header ul {
+  gap: 10px;
 }
 
-
-
-.titulo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
 }
 
-.container{
+footer {
+  background-color: #2525ad;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+footer img:hover {
+  -webkit-transform: translate(100px);
+          transform: translate(100px);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.galeria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 1rem;
+  margin: 1rem auto;
+  width: 100%;
+  height: auto;
+  place-items: center;
+}
+
+.galeria img {
+  width: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.galeria iframe {
+  width: 80%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.galeria2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 1rem;
+  margin: 1rem auto;
+  width: 100%;
+  height: auto;
+  place-items: center;
+}
+
+.galeria2 img {
+  width: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.galeria3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 1rem;
+  margin: 1rem auto;
+  width: 100%;
+  height: auto;
+  place-items: center;
+}
+
+.galeria3 img {
+  width: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tamaño {
+  margin: 0 10px;
+}
+
+.galeria4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 1rem;
+  margin: 1rem auto;
+  width: 100%;
+  height: auto;
+  place-items: center;
+}
+
+.galeria4 img {
+  width: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.galeria4 img:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+@media (min-width: 800px) {
+  .galeria img {
+    width: 90%;
+  }
+  .galeria iframe {
+    width: 90%;
+  }
+  .galeria2 img {
+    width: 50%;
+  }
+  .galeria3 img {
+    width: 30%;
+  }
+  .galeria4 {
+    width: 70%;
+  }
+  .tamaño {
+    margin: 0 200px;
+  }
+  .logo {
     width: 100%;
-    margin: 0 auto;
+  }
 }
 
-.galeria{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    grid-gap: 1rem;
-    margin: 1rem auto;    
-    width: 100%;
-    height: auto;
-    place-items: center;
+@media (min-width: 1300px) {
+  .tamaño {
+    margin: 0 400px;
+  }
+  p {
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+  }
 }
-
-.galeria img{
-    width: 80%;
-    height: auto;
-    object-fit: cover;
-}
-
-.galeria iframe{
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-}
-
-.galeria2{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    grid-gap: 1rem;
-    margin: 1rem auto;    
-    width: 100%;
-    height: auto;
-    place-items: center;
-}
-
-.galeria2 img{
-    width: 80%;
-    height: auto;
-    object-fit: cover;
-}
-
-.galeria3{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    grid-gap: 1rem;
-    margin: 1rem auto;    
-    width: 100%;
-    height: auto;
-    place-items: center;
-}
-
-.galeria3 img{
-    width: 80%;
-    height: auto;
-    object-fit: cover;
-}
-
-.galeria4{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    grid-gap: 1rem;
-    margin: 1rem auto;    
-    width: 100%;
-    height: auto;
-    place-items: center;
-}
-
-.galeria4 img{
-    width: 80%;
-    height: auto;
-    object-fit: cover;
-}
-
-footer{
-    background-color: rgb(37, 37, 173);
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
-footer img:hover{
-    transform: translate(100px);
-    transition: all 3s;
-}
-
-.galeria4 img:hover{
-    transform: scale(2);
-    transition: all 3s;
-}
-
-.tamaño{
-    margin: 0 10px;
-}
-
-@media (min-width: 800px){
-    
-    .galeria img{
-        width: 90%;
-    }
-
-    .galeria iframe{
-        width: 90%;
-    }
-
-    .galeria2 img{
-        width: 50%;
-    }
-
-    .galeria3 img{
-        width: 30%;
-    }
-
-    .galeria4{
-        width: 70%;
-    }
-    .tamaño{
-        margin: 0 200px;
-    }
-    .logo{
-        width: 100%;
-    }
-}
-
-@media (min-width: 1300px){
-    .tamaño{
-        margin: 0 400px;
-    }
-
-    p{
-        font-size: 25px;
-        font-family: 'Anton', sans-serif;
-    }
-}
+/*# sourceMappingURL=style.css.map */

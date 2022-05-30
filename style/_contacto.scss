@@ -1,0 +1,18 @@
+.galeria3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 1rem;
+    margin: 1rem auto;    
+    width: 100%;
+    height: auto;
+    place-items: center;
+    img{
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.tamaño{
+    margin: 0 10px;
+}
