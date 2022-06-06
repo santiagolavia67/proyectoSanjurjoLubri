@@ -7,13 +7,7 @@
 }
 
 body {
-  background-color: #a79a9a;
-  color: black;
   font-family: 'Roboto Flex', sans-serif;
-}
-
-.header {
-  background-color: #2525ad;
 }
 
 .header ul {
@@ -40,7 +34,6 @@ body {
 }
 
 footer {
-  background-color: #2525ad;
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,6 +53,39 @@ footer img:hover {
           transform: translate(100px);
   -webkit-transition: all 3s;
   transition: all 3s;
+}
+
+.btn--instagram {
+  background-color: #EF07FA;
+}
+
+.btn--whatsapp {
+  background-color: #52DC0D;
+}
+
+.btn--facebook {
+  background-color: #59B9F3;
+}
+
+.redsocial, .btn--instagram, .btn--whatsapp, .btn--facebook {
+  border: 2px solid #EF07FA;
+  border-radius: 30px;
+}
+
+.btn--whatsapp {
+  border-color: #52DC0D;
+}
+
+.btn--facebook {
+  border-color: #59B9F3;
+}
+
+body {
+  background-color: #a79a9a;
+}
+
+.header, footer {
+  background-color: #2525ad;
 }
 
 .container {

@@ -1,0 +1,30 @@
+.redsocial{
+    border: 2px solid #EF07FA;
+    border-radius: 30px
+}
+
+.btn--instagram{
+    @extend.redsocial;
+}
+
+.btn--whatsapp{
+    @extend.redsocial;
+    border-color: #52DC0D;
+}
+
+.btn--facebook{
+    @extend.redsocial;
+    border-color: #59B9F3;
+}
+
+@mixin color ($color) {
+    background-color: $color;
+}
+
+body{
+    @include color(rgb(167, 154, 154))
+}
+
+.header, footer{
+    @include color(rgb(37, 37, 173))
+}

@@ -4,13 +4,11 @@
 }
 
 body{
-    background-color: rgb(167, 154, 154);
-    color: black;
+    
     font-family: 'Roboto Flex', sans-serif;
 }
 
 .header{
-    background-color: rgb(37, 37, 173);
     ul{
         gap: 10px;
     }
@@ -26,7 +24,6 @@ body{
 }
 
 footer{
-    background-color: rgb(37, 37, 173);
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
@@ -37,4 +34,15 @@ footer{
         transform: translate(100px);
         transition: all 3s;
     }
+}
+
+$redes:(
+    instagram: #EF07FA,
+    whatsapp: #52DC0D,
+    facebook: #59B9F3,
+);
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }    
 }
