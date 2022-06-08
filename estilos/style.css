@@ -10,6 +10,12 @@ body {
   font-family: 'Roboto Flex', sans-serif;
 }
 
+.logo2 {
+  width: 40%;
+  height: auto;
+  margin-left: 10px;
+}
+
 .header ul {
   gap: 10px;
 }
@@ -34,6 +40,7 @@ body {
 }
 
 footer {
+  text-decoration: none;
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
